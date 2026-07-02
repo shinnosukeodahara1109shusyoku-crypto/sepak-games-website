@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO: 公開後に本番URLへ差し替え
-# Sitemap: https://example.netlify.app/sitemap.xml
+Sitemap: https://sepakgames.netlify.app/sitemap.xml
