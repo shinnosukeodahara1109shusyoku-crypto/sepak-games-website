@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEPAK GAMES | セパタクローゲームポータル</title>
+<meta name="description" content="セパタクローを遊び尽くす無料Webゲームポータル「SEPAK GAMES」。インストール不要・ブラウザですぐ遊べるセパタクロー対戦ゲーム。オンライン対戦や、勝利で集めるガチャコレクションも。">
+<meta name="theme-color" content="#1c1e22">
+
+<!-- OGP（SNSでシェアされたときの表示） TODO: 公開後に og:url を本番URLへ、og:image を用意した画像へ差し替え -->
+<meta property="og:site_name" content="SEPAK GAMES">
+<meta property="og:title" content="SEPAK GAMES | セパタクローゲームポータル">
+<meta property="og:description" content="インストール不要・ブラウザですぐ遊べるセパタクロー対戦ゲーム。勝利で集めるガチャコレクションも。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.netlify.app/">
+<meta property="og:image" content="https://example.netlify.app/assets/ogp.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- 検索エンジン向けの構造化データ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SEPAK GAMES",
+  "url": "https://example.netlify.app/",
+  "description": "セパタクローを遊び尽くす無料Webゲームポータル",
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "セパタクロー",
+  "url": "https://shinnosukeodahara1109shusyoku-crypto.github.io/Sepak-takrawgame/",
+  "description": "ブラウザで遊べる1vs1のセパタクロー対戦ゲーム。オンライン対戦・勝利ガチャつき。",
+  "playMode": ["SinglePlayer", "MultiPlayer"],
+  "gamePlatform": "Web Browser",
+  "inLanguage": "ja",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }
+}
+</script>
+</head>
+<body>
+
+<!-- ══════════ ヘッダー ══════════ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">SEPAK<span>GAMES</span></a>
+
+    <!-- ハンバーガーメニュー（CSSのみで動作） -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="global-nav">
+      <ul>
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#games">ゲーム</a></li>
+        <li><a href="#gacha">ガチャ</a></li>
+        <li><a href="#characters">キャラクター</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+        <li><a href="#play" class="nav-cta">今すぐプレイ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ══════════ ヒーロー ══════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <p class="hero-eyebrow">SEPAK TAKRAW WEB GAME</p>
+    <h1 class="hero-title">蹴って、跳んで、<br>集めろ。</h1>
+    <p class="hero-lead">ブラウザで今すぐ遊べるセパタクロー対戦ゲーム。<br class="pc-only">勝つたびに回せるガチャで、キャラクターをコレクションしよう。</p>
+    <div class="hero-actions">
+      <a href="https://shinnosukeodahara1109shusyoku-crypto.github.io/Sepak-takrawgame/" target="_blank" rel="noopener" class="btn btn-primary">今すぐゲーム開始</a>
+      <a href="#gacha" class="btn btn-ghost">ガチャを見る</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">SCROLL</div>
+</section>
+
+<!-- ══════════ コンセプト ══════════ -->
+<section class="section concept" id="concept">
+  <div class="container">
+    <p class="section-eyebrow">CONCEPT</p>
+    <h2 class="section-title">セパタクローを、<br class="sp-only">もっと身近に。</h2>
+    <p class="section-lead">
+      アクロバティックな足技が魅力のスポーツ「セパタクロー」。<br>
+      その爽快感を、インストール不要・ブラウザだけで体験できるゲームにしました。
+    </p>
+    <div class="concept-grid">
+      <div class="concept-card">
+        <div class="concept-icon" aria-hidden="true">⚡</div>
+        <h3>すぐ遊べる</h3>
+        <p>アプリのインストールは不要。スマホでもPCでも、ブラウザを開けばすぐキックオフ。</p>
+      </div>
+      <div class="concept-card">
+        <div class="concept-icon" aria-hidden="true">🌐</div>
+        <h3>友達と対戦</h3>
+        <p>ルームコードを共有するだけでオンライン対戦。CPU戦でひとり練習もOK。</p>
+      </div>
+      <div class="concept-card">
+        <div class="concept-icon" aria-hidden="true">🎁</div>
+        <h3>勝って集める</h3>
+        <p>勝利するとガチャが回せる。カプセルの中身は…回してからのお楽しみ。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ゲーム一覧 ══════════ -->
+<section class="section games section-dark" id="games">
+  <div class="container">
+    <p class="section-eyebrow">GAMES</p>
+    <h2 class="section-title">ラインナップ</h2>
+    <div class="games-grid">
+
+      <article class="game-card is-playable">
+        <div class="game-thumb">
+          <!-- TODO: ゲームのスクリーンショットに差し替え -->
+          <span class="game-thumb-placeholder">GAME SCREENSHOT</span>
+          <span class="game-badge">PLAYABLE</span>
+        </div>
+        <div class="game-body">
+          <h3>セパタクロー</h3>
+          <p>1vs1のセパタクロー対戦ゲーム。キック・オーバーヘッドを駆使して相手コートにボールを叩き込め。</p>
+          <a href="https://shinnosukeodahara1109shusyoku-crypto.github.io/Sepak-takrawgame/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">プレイする</a>
+        </div>
+      </article>
+
+      <article class="game-card is-coming">
+        <div class="game-thumb">
+          <span class="game-thumb-placeholder">???</span>
+          <span class="game-badge badge-coming">COMING SOON</span>
+        </div>
+        <div class="game-body">
+          <h3>新作ゲーム 01</h3>
+          <p>セパタクロー関連の新作を開発中。続報をお楽しみに。</p>
+        </div>
+      </article>
+
+      <article class="game-card is-coming">
+        <div class="game-thumb">
+          <span class="game-thumb-placeholder">???</span>
+          <span class="game-badge badge-coming">COMING SOON</span>
+        </div>
+        <div class="game-body">
+          <h3>新作ゲーム 02</h3>
+          <p>こちらもセパタクロー関連。乞うご期待。</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ガチャコレクション ══════════ -->
+<section class="section gacha section-dark" id="gacha">
+  <div class="container">
+    <p class="section-eyebrow">GACHA COLLECTION</p>
+    <h2 class="section-title">勝利の先に、<br class="sp-only">カプセルが待つ。</h2>
+    <p class="section-lead">
+      試合に勝つとガチャが1回まわせる。<br>
+      6色のカプセル＋レアキャラ──コンプリートを目指せ。
+    </p>
+
+    <div class="capsule-row" aria-hidden="true">
+      <span class="capsule capsule-red"></span>
+      <span class="capsule capsule-blue"></span>
+      <span class="capsule capsule-green"></span>
+      <span class="capsule capsule-yellow"></span>
+      <span class="capsule capsule-purple"></span>
+      <span class="capsule capsule-white"></span>
+      <span class="capsule capsule-rare">★</span>
+    </div>
+
+    <div class="gacha-features">
+      <div class="gacha-feature">
+        <h3>勝てば回せる</h3>
+        <p>課金なし。実力だけがガチャの鍵。</p>
+      </div>
+      <div class="gacha-feature">
+        <h3>コレクション機能</h3>
+        <p>集めたカプセルは自動で図鑑に記録される。</p>
+      </div>
+      <div class="gacha-feature">
+        <h3>シークレット</h3>
+        <p>まだ誰も知らないレアが眠っている…かもしれない。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ キャラクター紹介 ══════════ -->
+<section class="section characters" id="characters">
+  <div class="container">
+    <p class="section-eyebrow">CHARACTERS</p>
+    <h2 class="section-title">キャラクター</h2>
+    <p class="section-lead">ガチャから登場するキャラクターたち。全員に会えるかは、キミの勝利数しだい。</p>
+    <div class="char-grid">
+
+      <article class="char-card">
+        <div class="char-portrait">
+          <!-- TODO: assets/tsubo_kura.png に差し替え -->
+          <span class="char-placeholder">IMAGE</span>
+        </div>
+        <p class="char-rarity">★ PICK UP</p>
+        <h3 class="char-name">ツボ・クラ</h3>
+        <p class="char-quote">「野球とセパの二刀流なんてこいつとあいつくらい」</p>
+      </article>
+
+      <article class="char-card is-secret">
+        <div class="char-portrait">
+          <span class="char-placeholder char-silhouette">?</span>
+        </div>
+        <p class="char-rarity">SECRET</p>
+        <h3 class="char-name">？？？</h3>
+        <p class="char-quote">ガチャで出会えるかも…？</p>
+      </article>
+
+      <article class="char-card is-secret">
+        <div class="char-portrait">
+          <span class="char-placeholder char-silhouette">?</span>
+        </div>
+        <p class="char-rarity">SECRET</p>
+        <h3 class="char-name">？？？</h3>
+        <p class="char-quote">近日公開予定。</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ プレイCTA ══════════ -->
+<section class="section play-cta" id="play">
+  <div class="container">
+    <h2 class="play-title">さあ、キックオフ。</h2>
+    <p class="play-lead">インストール不要。ボタンひとつで試合開始。</p>
+    <a href="https://shinnosukeodahara1109shusyoku-crypto.github.io/Sepak-takrawgame/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">今すぐゲーム開始</a>
+  </div>
+</section>
+
+<!-- ══════════ お問い合わせ ══════════ -->
+<section class="section contact" id="contact">
+  <div class="container container-narrow">
+    <p class="section-eyebrow">CONTACT</p>
+    <h2 class="section-title">お問い合わせ</h2>
+    <p class="section-lead">ご意見・ご感想・不具合報告など、お気軽にどうぞ。</p>
+
+    <!-- Googleフォーム連携: 見た目はこのサイトのまま、送信データだけGoogleフォームに記録される -->
+    <form class="contact-form" id="contactForm"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSd2zEGayqavc96Z0F9NjpJHDblPqJxu7sWBeWed3k_uHK79kQ/formResponse"
+          method="POST" target="hidden_iframe">
+      <div class="form-group">
+        <label for="name">お名前 <span class="required">必須</span></label>
+        <input type="text" id="name" name="entry.1781500597" required autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="email">メールアドレス <span class="required">必須</span></label>
+        <input type="email" id="email" name="entry.1640447617" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="subject">件名</label>
+        <input type="text" id="subject" name="entry.372180179">
+      </div>
+      <div class="form-group">
+        <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+        <textarea id="message" name="entry.2040870261" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">送信する</button>
+      <p class="form-success" id="formSuccess" hidden>送信しました。お問い合わせありがとうございます！</p>
+    </form>
+    <!-- Googleフォームの完了画面へ遷移させないための受け皿 -->
+    <iframe name="hidden_iframe" id="hiddenIframe" style="display:none" title="送信処理用"></iframe>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ フッター ══════════ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-logo">SEPAK<span>GAMES</span></p>
+    <nav class="footer-nav">
+      <a href="#concept">コンセプト</a>
+      <a href="#games">ゲーム</a>
+      <a href="#gacha">ガチャ</a>
+      <a href="#characters">キャラクター</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+    <p class="copyright">&copy; 2026 SEPAK GAMES</p>
+  </div>
+</footer>
+
+<script>
+// Googleフォーム送信: 完了画面に飛ばさず、その場で送信完了メッセージを表示する
+(function () {
+  const form = document.getElementById('contactForm');
+  const iframe = document.getElementById('hiddenIframe');
+  const success = document.getElementById('formSuccess');
+  let submitted = false;
+
+  form.addEventListener('submit', function () {
+    submitted = true;
+  });
+  iframe.addEventListener('load', function () {
+    if (!submitted) return; // 初期ロードは無視
+    submitted = false;
+    form.reset();
+    success.hidden = false;
+  });
+})();
+</script>
+
+</body>
+</html>
