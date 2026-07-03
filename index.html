@@ -55,7 +55,7 @@
 <!-- ══════════ ヘッダー ══════════ -->
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#" class="logo">SEPAK<span>GAMES</span></a>
+    <a href="index.html" class="logo">SEPAK<span>GAMES</span></a>
 
     <!-- ハンバーガーメニュー（CSSのみで動作） -->
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -65,12 +65,12 @@
 
     <nav class="global-nav">
       <ul>
-        <li><a href="#concept">コンセプト</a></li>
-        <li><a href="#games">ゲーム</a></li>
-        <li><a href="#gacha">ガチャ</a></li>
-        <li><a href="#characters">キャラクター</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
-        <li><a href="#play" class="nav-cta">今すぐプレイ</a></li>
+        <li><a href="concept.html">コンセプト</a></li>
+        <li><a href="games.html">ゲーム</a></li>
+        <li><a href="gacha.html">ガチャ</a></li>
+        <li><a href="characters.html">キャラクター</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="https://shinnosukeodahara1109shusyoku-crypto.github.io/Sepak-takrawgame/" target="_blank" rel="noopener" class="nav-cta">今すぐプレイ</a></li>
       </ul>
     </nav>
   </div>
@@ -87,7 +87,7 @@
     <p class="hero-lead">ブラウザで今すぐ遊べるセパタクロー対戦ゲーム。<br class="pc-only">勝つたびに回せるガチャで、キャラクターをコレクションしよう。</p>
     <div class="hero-actions">
       <a href="https://shinnosukeodahara1109shusyoku-crypto.github.io/Sepak-takrawgame/" target="_blank" rel="noopener" class="btn btn-primary">今すぐゲーム開始</a>
-      <a href="#gacha" class="btn btn-ghost">ガチャを見る</a>
+      <a href="gacha.html" class="btn btn-ghost">ガチャを見る</a>
     </div>
   </div>
   <div class="hero-scroll" aria-hidden="true">SCROLL</div>
@@ -119,6 +119,7 @@
         <p>勝利するとガチャが回せる。カプセルの中身は…回してからのお楽しみ。</p>
       </div>
     </div>
+    <div class="section-more"><a href="concept.html" class="btn btn-outline btn-sm">コンセプトを詳しく</a></div>
   </div>
 </section>
 
@@ -173,6 +174,7 @@
         <p>SPECIALゲージを溜めると放てる、炎を纏った必殺シュート。決まれば爽快、外せば大ピンチ──続きはプレイで確かめよう。</p>
       </div>
     </aside>
+    <div class="section-more"><a href="games.html" class="btn btn-outline btn-sm">ゲーム一覧を詳しく</a></div>
   </div>
 </section>
 
@@ -210,6 +212,7 @@
         <p>まだ誰も知らないレアが眠っている…かもしれない。</p>
       </div>
     </div>
+    <div class="section-more"><a href="gacha.html" class="btn btn-outline btn-sm">ガチャを詳しく</a></div>
   </div>
 </section>
 
@@ -249,6 +252,7 @@
       </article>
 
     </div>
+    <div class="section-more"><a href="characters.html" class="btn btn-outline btn-sm">キャラクターを詳しく</a></div>
   </div>
 </section>
 
@@ -303,11 +307,11 @@
   <div class="container footer-inner">
     <p class="footer-logo">SEPAK<span>GAMES</span></p>
     <nav class="footer-nav">
-      <a href="#concept">コンセプト</a>
-      <a href="#games">ゲーム</a>
-      <a href="#gacha">ガチャ</a>
-      <a href="#characters">キャラクター</a>
-      <a href="#contact">お問い合わせ</a>
+      <a href="concept.html">コンセプト</a>
+      <a href="games.html">ゲーム</a>
+      <a href="gacha.html">ガチャ</a>
+      <a href="characters.html">キャラクター</a>
+      <a href="contact.html">お問い合わせ</a>
     </nav>
     <p class="copyright">&copy; 2026 SEPAK GAMES</p>
   </div>
@@ -319,6 +323,7 @@
   const form = document.getElementById('contactForm');
   const iframe = document.getElementById('hiddenIframe');
   const success = document.getElementById('formSuccess');
+  if (!form) return;
   let submitted = false;
 
   form.addEventListener('submit', function () {
