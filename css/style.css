@@ -85,20 +85,6 @@ ul { list-style: none; }
 .btn-ghost:hover { border-color: #fff; transform: translateY(-2px); }
 .btn-sm { padding: 10px 26px; font-size: 14px; }
 .btn-lg { padding: 18px 56px; font-size: 18px; }
-/* 明背景・暗背景どちらでも使えるアクセント枠ボタン（詳細ページ誘導用） */
-.btn-outline {
-  background: transparent;
-  color: var(--color-accent);
-  border: 2px solid var(--color-accent);
-}
-.btn-outline:hover {
-  background: var(--color-accent);
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-/* セクション末尾の「詳しく見る／ホームに戻る」導線 */
-.section-more { text-align: center; margin-top: 44px; }
 
 /* ══════════ ヘッダー ══════════ */
 .site-header {
@@ -136,8 +122,6 @@ ul { list-style: none; }
   transition: color 0.15s;
 }
 .global-nav a:hover { color: var(--color-accent); }
-.global-nav a.active { color: var(--color-accent); }
-.global-nav a.active.nav-cta { color: #fff !important; }
 .nav-cta {
   background: var(--color-accent);
   color: #fff !important;
@@ -200,6 +184,35 @@ ul { list-style: none; }
   justify-content: center;
   flex-wrap: wrap;
 }
+/* ヒーロー内のセクションリンク集 */
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 22px;
+  margin-top: 32px;
+}
+.hero-links a {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  color: var(--color-muted-on-dark);
+  padding-bottom: 3px;
+  transition: color 0.15s;
+}
+.hero-links a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%; height: 1px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+.hero-links a:hover { color: #fff; }
+.hero-links a:hover::after { transform: scaleX(1); }
 .hero-scroll {
   position: absolute;
   bottom: 28px;
@@ -229,8 +242,6 @@ ul { list-style: none; }
 
 /* ══════════ セクション共通 ══════════ */
 .section { padding: 96px 0; }
-/* 個別ページ（mainの先頭がセクション）は固定ヘッダー分の余白を上に確保 */
-main > .section:first-child { padding-top: calc(var(--header-height) + 56px); }
 .section-dark {
   background: var(--color-dark);
   color: var(--color-text-on-dark);
