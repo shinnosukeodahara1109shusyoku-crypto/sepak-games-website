@@ -311,7 +311,8 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
 }
-.game-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.game-thumb img,
+.game-thumb .game-thumb-media { width: 100%; height: 100%; object-fit: cover; display: block; }
 .game-thumb-placeholder {
   font-size: 13px;
   font-weight: bold;
